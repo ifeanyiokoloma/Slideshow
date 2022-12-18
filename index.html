@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="slider.js" defer></script>
+    <title>Image Slideshow</title>
+  </head>
+  <body>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+          <img src="images/building.jpg" />
+          <h1 class="text">Building</h1>
+        </div>
+        <div class="mySlides">
+          <img src="images/clippers.jpg" />
+          <h1 class="text">Clippers</h1>
+        </div>
+        <div class="mySlides">
+          <img src="images/clothing.jpg" />
+          <h1 class="text">Clothings</h1>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <!-- The dots/circles -->
+      <div class="dot-box">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  </body>
+</html>
