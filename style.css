@@ -15,13 +15,15 @@ img {
   width: 100%;
   height: 100vh;
   position: relative;
-  margin: auto;
   overflow: hidden;
 }
 
 /* Full-width images */
 .mySlides {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
 }
@@ -54,6 +56,7 @@ img {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
 }
 
 /* The dots/circles */
@@ -123,9 +126,11 @@ img {
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
+    transform: translate(0);
   }
   to {
     opacity: 1;
+    transform: translate(-100%);
   }
 }
 
